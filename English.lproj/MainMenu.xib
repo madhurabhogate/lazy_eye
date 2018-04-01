@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <menu title="AMainMenu" systemMenu="main" id="29">
+            <items>
+                <menuItem title="Lazy Eye" id="56">
+                    <menu key="submenu" title="Lazy Eye" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="Check for Updates..." id="597">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="596" id="598"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="About Lazy Eye" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="showPreferences:" target="494" id="560"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide Lazy Eye" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="368"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit Lazy Eye" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-3" id="449"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="571">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="File" id="572">
+                        <items>
+                            <menuItem title="Close" keyEquivalent="w" id="577">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="588"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Shade" id="295">
+                    <menu key="submenu" title="Shade" id="296">
+                        <items>
+                            <menuItem title="Turn Lazy Eye Off" keyEquivalent="s" id="599">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleEnabledStatus:" target="494" id="605"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="600"/>
+                            <menuItem title="Lighter" keyEquivalent="" id="535">
+                                <connections>
+                                    <action selector="decreaseOpacity:" target="494" id="538"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Darker" keyEquivalent="" id="534">
+                                <connections>
+                                    <action selector="increaseOpacity:" target="494" id="539"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="490">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="491">
+                        <items>
+                            <menuItem title="Lazy Eye Help" keyEquivalent="?" id="492">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="493"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="57" y="109"/>
+        </menu>
+        <customObject id="494" customClass="LazyEyeAppDelegate">
+            <connections>
+                <outlet property="dockIconCheckbox" destination="564" id="569"/>
+                <outlet property="opacitySlider" destination="547" id="557"/>
+                <outlet property="prefsWindow" destination="562" id="568"/>
+                <outlet property="stateMenuItemMainMenu" destination="599" id="602"/>
+                <outlet property="stateMenuItemStatusBar" destination="601" id="603"/>
+                <outlet property="statusMenu" destination="540" id="555"/>
+                <outlet property="thicknessSlider" destination="63d-58-n45" id="XOD-so-lrv"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+        <menu id="540">
+            <items>
+                <menuItem id="542">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <outlet property="view" destination="546" id="553"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="606"/>
+                <menuItem title="Turn Lazy Eye Off" id="601">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleEnabledStatus:" target="494" id="604"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="554"/>
+                <menuItem title="About Lazy" id="541">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showAbout:" target="494" id="558"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Preferences..." id="559">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showPreferences:" target="494" id="561"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="570"/>
+                <menuItem title="Quit Lazy Eye" id="543">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-3" id="545"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="195" y="323.5"/>
+        </menu>
+        <customView id="546">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <userGuides>
+                <userLayoutGuide location="104" affinity="minY"/>
+                <userLayoutGuide location="175" affinity="minX"/>
+            </userGuides>
+            <subviews>
+                <slider verticalHuggingPriority="750" id="547">
+                    <rect key="frame" x="42" y="6" width="107" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" continuous="YES" alignment="left" minValue="0.10000000000000001" maxValue="1" doubleValue="0.59799999999999998" tickMarkPosition="below" sliderType="linear" id="548"/>
+                    <connections>
+                        <action selector="opacitySliderChanged:" target="494" id="556"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="549">
+                    <rect key="frame" x="5" y="10" width="34" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Dark" id="550">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="551">
+                    <rect key="frame" x="152" y="10" width="36" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Light" id="552">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="139.5" y="-31"/>
+        </customView>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="562" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="276" y="862" width="335" height="76"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <view key="contentView" id="563">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button imageHugsTitle="YES" id="564">
+                        <rect key="frame" x="18" y="40" width="122" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Show Dock Icon" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="565">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="toggleDockIcon:" target="494" id="595"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="566">
+                        <rect key="frame" x="38" y="20" width="288" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Changing this setting may require restarting Lazy Eye." id="567">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="94" y="-178"/>
+        </window>
+        <customObject id="596" customClass="SUUpdater"/>
+        <menuItem id="kml-ZA-FGu">
+            <modifierMask key="keyEquivalentModifierMask"/>
+            <connections>
+                <outlet property="view" destination="5mD-zn-Ddf" id="a6V-If-gZa"/>
+            </connections>
+        </menuItem>
+        <customView misplaced="YES" id="5mD-zn-Ddf">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <userGuides>
+                <userLayoutGuide location="104" affinity="minY"/>
+                <userLayoutGuide location="175" affinity="minX"/>
+            </userGuides>
+            <subviews>
+                <textField verticalHuggingPriority="750" id="E8B-0P-MHN">
+                    <rect key="frame" x="5" y="65" width="34" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Thin" id="gLc-RV-xcp">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="0vI-e4-Nns">
+                    <rect key="frame" x="309" y="65" width="38" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Thick" id="fDH-5T-83W">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <slider verticalHuggingPriority="750" misplaced="YES" id="63d-58-n45">
+                    <rect key="frame" x="44" y="61" width="264" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" continuous="YES" alignment="left" minValue="100" maxValue="600" doubleValue="300" tickMarkPosition="below" sliderType="linear" id="krm-SA-4rg">
+                        <connections>
+                            <action selector="thicknessSliderChanged:" target="494" id="HTm-li-IlW"/>
+                        </connections>
+                    </sliderCell>
+                </slider>
+            </subviews>
+            <point key="canvasLocation" x="-27" y="72"/>
+        </customView>
+    </objects>
+</document>
