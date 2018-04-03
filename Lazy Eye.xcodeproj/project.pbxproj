@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F36E589207349FD003DDAE8 /* Lazy_Eye_254.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0F36E588207349FD003DDAE8 /* Lazy_Eye_254.icns */; };
-		0F36E58D20734BA9003DDAE8 /* Lazy_Eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F36E58C20734BA9003DDAE8 /* Lazy_Eye.png */; };
+		0F36E58F20734CD7003DDAE8 /* Lazy_Eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F36E58E20734CD7003DDAE8 /* Lazy_Eye.png */; };
 		0F915D1D20717A1B00A0D610 /* LazyEyeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F915D1C20717A1B00A0D610 /* LazyEyeAppDelegate.m */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0F36E588207349FD003DDAE8 /* Lazy_Eye_254.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Lazy_Eye_254.icns; sourceTree = "<group>"; };
-		0F36E58C20734BA9003DDAE8 /* Lazy_Eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lazy_Eye.png; sourceTree = "<group>"; };
+		0F36E58E20734CD7003DDAE8 /* Lazy_Eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lazy_Eye.png; sourceTree = "<group>"; };
 		0F915D1C20717A1B00A0D610 /* LazyEyeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyEyeAppDelegate.m; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -166,7 +166,7 @@
 		C9F3743C10A614C700025D8B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				0F36E58C20734BA9003DDAE8 /* Lazy_Eye.png */,
+				0F36E58E20734CD7003DDAE8 /* Lazy_Eye.png */,
 				0F36E588207349FD003DDAE8 /* Lazy_Eye_254.icns */,
 			);
 			name = Images;
@@ -224,12 +224,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F36E58D20734BA9003DDAE8 /* Lazy_Eye.png in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				C9A3A24E109F67E500E483C0 /* Credits.html in Resources */,
 				0F36E589207349FD003DDAE8 /* Lazy_Eye_254.icns in Resources */,
 				C9906FA310A4D381003C9798 /* dsa_pub.pem in Resources */,
+				0F36E58F20734CD7003DDAE8 /* Lazy_Eye.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
