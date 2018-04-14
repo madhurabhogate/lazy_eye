@@ -29,7 +29,7 @@ a tool that allows the patient to use their computer for a variety of tasks not 
 ### Preview
 <img src="Light shades.png" height="400" alt="Screenshot"/>
 
-### [Download Lazy Eye]("Lazy Eye.app") <br/>
+### [Download Lazy Eye](https://github.com/madhurabhogate/lazy_eye/blob/master/Lazy%20Eye.zip) <br/>
 
 
 
