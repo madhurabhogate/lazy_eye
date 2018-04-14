@@ -30,6 +30,6 @@ a tool that allows the patient to use their computer for a variety of tasks not 
 
 ![Screenshot](https://raw.github.com/madhurabhogate/lazy_eye/blob/master/Dark%20shades.png) 
 ![Screenshot](/Resources/Images/Light shades.png?raw=true)
-![Screenshot](/Light shades.png?raw=true)
+![Screenshot](Light shades.png?raw=true)
 
 Includes **Shady** code by **Matt Gemmell**
