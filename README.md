@@ -1,4 +1,4 @@
-## Lazy Eye Reader for Amblyopia !<img src="Lazy_Eye_254.icns" height ="10" alt="Cool Shades"/>
+## Lazy Eye Reader for Amblyopia !  <img src="Lazy_Eye_254.icns" height ="50" alt="Cool Shades"/>
 
 ### Overview<br/>
 Amblyopia is a vision development disorder in which an eye fails to achieve normal visual acuity due to the eye and the brain not working together properly.
