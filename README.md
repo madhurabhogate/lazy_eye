@@ -1,4 +1,4 @@
-## Lazy Eye Reader for Amblyopia ![Cool Shades](/Resources/Images/Lazy_Eye_254.icns?raw=true "Optional Title")
+## Lazy Eye Reader for Amblyopia !<img src="Lazy_Eye_254.icns" alt="Cool Shades"/>
 
 ### Overview<br/>
 Amblyopia is a vision development disorder in which an eye fails to achieve normal visual acuity due to the eye and the brain not working together properly.
@@ -27,11 +27,6 @@ a tool that allows the patient to use their computer for a variety of tasks not 
 * The functional eye is suppressed to a level that allows the weaker eye the opportunity to focus.
 
 ### Preview
-
-![Screenshot](https://raw.github.com/madhurabhogate/lazy_eye/blob/master/Dark%20shades.png) 
-![Screenshot](/Resources/Images/Light shades.png?raw=true)
 <img src="Light shades.png" height="400" alt="Screenshot"/>
-<img src="Dark shades.png" height="400" alt="Screenshot"/>
-![Screenshot](Light shades.png?raw=true)
 
 Includes **Shady** code by **Matt Gemmell**
