@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F10678E2081C8A80064658C /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0F10678D2081C8A80064658C /* README */; };
+		0F1067902081D0620064658C /* Dark shades.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F10678F2081D0620064658C /* Dark shades.png */; };
+		0F1067922081D0680064658C /* Light shades.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F1067912081D0680064658C /* Light shades.png */; };
 		0F36E589207349FD003DDAE8 /* Lazy_Eye_254.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0F36E588207349FD003DDAE8 /* Lazy_Eye_254.icns */; };
 		0F36E58F20734CD7003DDAE8 /* Lazy_Eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F36E58E20734CD7003DDAE8 /* Lazy_Eye.png */; };
 		0F915D1D20717A1B00A0D610 /* LazyEyeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F915D1C20717A1B00A0D610 /* LazyEyeAppDelegate.m */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F10678D2081C8A80064658C /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		0F10678F2081D0620064658C /* Dark shades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dark shades.png"; sourceTree = "<group>"; };
+		0F1067912081D0680064658C /* Light shades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Light shades.png"; sourceTree = "<group>"; };
 		0F36E588207349FD003DDAE8 /* Lazy_Eye_254.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Lazy_Eye_254.icns; sourceTree = "<group>"; };
 		0F36E58E20734CD7003DDAE8 /* Lazy_Eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lazy_Eye.png; sourceTree = "<group>"; };
 		0F915D1C20717A1B00A0D610 /* LazyEyeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyEyeAppDelegate.m; sourceTree = "<group>"; };
@@ -123,6 +129,7 @@
 		29B97314FDCFA39411CA2CEA /* Shady */ = {
 			isa = PBXGroup;
 			children = (
+				0F10678D2081C8A80064658C /* README */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -166,6 +173,8 @@
 		C9F3743C10A614C700025D8B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0F1067912081D0680064658C /* Light shades.png */,
+				0F10678F2081D0620064658C /* Dark shades.png */,
 				0F36E58E20734CD7003DDAE8 /* Lazy_Eye.png */,
 				0F36E588207349FD003DDAE8 /* Lazy_Eye_254.icns */,
 			);
@@ -228,8 +237,11 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				C9A3A24E109F67E500E483C0 /* Credits.html in Resources */,
 				0F36E589207349FD003DDAE8 /* Lazy_Eye_254.icns in Resources */,
+				0F1067902081D0620064658C /* Dark shades.png in Resources */,
 				C9906FA310A4D381003C9798 /* dsa_pub.pem in Resources */,
 				0F36E58F20734CD7003DDAE8 /* Lazy_Eye.png in Resources */,
+				0F1067922081D0680064658C /* Light shades.png in Resources */,
+				0F10678E2081C8A80064658C /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
